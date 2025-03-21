@@ -1,0 +1,8 @@
+def contar_palavras(texto: str) ->dict:
+    palavras = texto.split()
+    contagem_palavras = {}
+    for i in palavras:
+        contagem_palavras[i] = contagem_palavras.get(i, 0) + 1
+    return contagem_palavras
+
+print(contar_palavras("banana maçã banana laranja maçã maçã"))

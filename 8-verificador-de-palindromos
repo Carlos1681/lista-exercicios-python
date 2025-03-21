@@ -1,0 +1,8 @@
+def verificar_palindromo(palavra: str) -> bool:
+    palavra_nova = palavra.lower()
+    return (True if palavra_nova == palavra_nova[::-1] else False)
+
+print(verificar_palindromo('radar')) 
+print(verificar_palindromo('programar'))
+print(verificar_palindromo('lista')) 
+print(verificar_palindromo('Reviver'))   

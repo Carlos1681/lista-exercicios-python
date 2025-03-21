@@ -1,0 +1,5 @@
+def somar_pares(elementos: list) -> str:
+    total = sum([i for i in elementos if i % 2 == 0])
+    return "A soma dos pares é: " + str(total)
+
+print(somar_pares([2,4,10,3,9,7,15,22]))

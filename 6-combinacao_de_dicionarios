@@ -1,0 +1,11 @@
+def combinar_dicts(primeiro_dict: dict, segundo_dict: dict) ->dict:
+    dict_combinado = primeiro_dict.copy()
+    for i,j in segundo_dict.items():
+        dict_combinado[i] = dict_combinado.get(i,0) + j
+    return dict_combinado
+
+d1 = {'a': 2, 'b': 3, 'c': 5}
+d2 = {'a': 1, 'b': 4, 'd': 7}
+
+print(combinar_dicts(d1, d2))
+    

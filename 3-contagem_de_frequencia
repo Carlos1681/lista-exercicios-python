@@ -1,0 +1,7 @@
+def contar_frequencia(linguagens: list) ->dict:
+    frequencia_total = {}
+    for i in linguagens:
+        frequencia_total[i] = frequencia_total.get(i, 0) + 1
+    return frequencia_total
+
+print(contar_frequencia(["Java", "Java", "Ruby", "Javascript", "Ruby"]))

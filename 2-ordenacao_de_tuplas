@@ -1,0 +1,4 @@
+def ordenar_tuplas(elementos: list) ->list:
+    return [i[0] for i in sorted(elementos, key=lambda i: i[1])]
+
+print(ordenar_tuplas([("Samuel", 27), ("Karynne", 23),("Carol", 20), ("Kleber", 26), ("Vinicius", 30)]))
